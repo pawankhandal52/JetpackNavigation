@@ -66,7 +66,6 @@ class DeepLinkFragment : Fragment() {
                 notificationManager.createNotificationChannel(NotificationChannel(
                         "deeplink", "Deep Links", NotificationManager.IMPORTANCE_HIGH))
             }
-
             val builder = NotificationCompat.Builder(
                     context!!, "deeplink")
                     .setContentTitle("Navigation")
@@ -76,5 +75,8 @@ class DeepLinkFragment : Fragment() {
                     .setAutoCancel(true)
             notificationManager.notify(0, builder.build())
         }
+
+
+
     }
 }
